@@ -1,5 +1,8 @@
 import './bootstrap';
 
 import { createApp } from "vue";
-const app  = createApp({})
+import PostsIndex from './components/Posts/Index.vue'
+
+const app = createApp({})
+app.component('posts-index', PostsIndex)
 app.mount('#app')
